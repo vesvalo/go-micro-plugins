@@ -31,7 +31,7 @@ func NewHandlerWrapper() server.HandlerWrapper {
 			name := req.Endpoint()
 
 			timer := prometheus.NewTimer(prometheus.ObserverFunc(func(v float64) {
-				us := v * 1000000 // make microseconds
+				us := v * 1000 // make miliseconds
 				timeCounter.WithLabelValues(name).Observe(us)
 			}))
 			defer timer.ObserveDuration()
