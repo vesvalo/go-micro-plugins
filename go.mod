@@ -1,4 +1,4 @@
-module github.com/ProtocolONE/go-micro-plugins
+module github.com/vesvalo/go-micro-plugins
 
 require (
 	github.com/go-log/log v0.1.0 // indirect
